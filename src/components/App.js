@@ -9,7 +9,7 @@ const App = () => {
     const[fromCurr,setFromcurr] = useState();
     const[toCurr,setTocurr] = useState();
     const [exchangeRate, setExchangeRate]= useState();
-    const[amount, setAmount] =useState(1);
+    const[amount, setAmount] =useState(0);
     const[amountFromCurr,setAmountFromcurr]= useState(true);
    
     let toAmount , fromAmount ;
