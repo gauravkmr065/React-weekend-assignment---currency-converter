@@ -12,7 +12,7 @@ export default function CurrencyConverter(props) {
                   return   <option key ={i++}value={option}>{option}</option>
               })}
             </select> 
-            <input type="number" value={amount}  onChange={onchangeAmount}/>
+            <input type="number" min="0" value={amount}  onChange={onchangeAmount} />
         </div>
     )
 }
