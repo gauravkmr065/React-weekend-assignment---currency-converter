@@ -56,19 +56,18 @@ const App = () => {
       <br/>
       <CurrencyConverter 
             currencyOption={currencyOption} 
-            selectedCurr={fromCurr}
+            selectedCurr="USD"
             onchangeCurr={e=>setFromcurr(e.target.value)}
             amount = {fromAmount}
             onchangeAmount ={handleFromAmount}
-            defaultCurr = "USD"
             />
       <br/>
-      <CurrencyConverter  currencyOption={currencyOption} selectedCurr={toCurr}
+      <CurrencyConverter  
+          currencyOption={currencyOption} 
+          selectedCurr="INR"
           onchangeCurr={e=>setTocurr(e.target.value)}
-           amount = {toAmount.toFixed(2)}
-           onchangeAmount ={handleToAmount}
-           defaultCurr = "INR"
-
+          amount = {toAmount.toFixed(2)}
+          onchangeAmount ={handleToAmount}
        />
     </div>
   )
